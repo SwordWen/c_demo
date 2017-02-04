@@ -48,13 +48,13 @@ int main(int argc, char* argv[])
     {
         if( (portnumber = atoi(argv[1])) < 0 )
         {
-            fprintf(stderr,"Usage:%s portnumber/a/n",argv[0]);
+            fprintf(stderr,"Usage:%s portnumber\a\n",argv[0]);
             return 1;
         }
     }
     else
     {
-        fprintf(stderr,"Usage:%s portnumber/a/n",argv[0]);
+        fprintf(stderr,"Usage:%s portnumber\a\n",argv[0]);
         return 1;
     }
 
@@ -141,7 +141,7 @@ int main(int argc, char* argv[])
                     close(sockfd);
                     events[i].data.fd = -1;
                 }
-                line[n] = '/0';
+                line[n] = '\0';
                 cout << "read " << line << endl;
                 //设置用于写操作的文件描述符
 
