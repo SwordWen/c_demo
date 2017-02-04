@@ -9,3 +9,4 @@ project (C_DEMO)
 # the project's entire directory structure.
 add_subdirectory (socket)
 add_subdirectory (epoll)
+add_subdirectory (select)
